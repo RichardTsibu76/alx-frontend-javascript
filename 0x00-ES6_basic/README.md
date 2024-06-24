@@ -1,1 +1,1 @@
-This is my README FILE
+0x00. ES6 Basics
