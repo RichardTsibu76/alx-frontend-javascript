@@ -3,5 +3,4 @@ function uploadPhoto(filename) {
     `${filename} cannot be processed`,
   ));
 }
-//this is the export function
 export default uploadPhoto;
