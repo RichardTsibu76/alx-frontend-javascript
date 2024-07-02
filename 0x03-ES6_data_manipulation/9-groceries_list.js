@@ -1,6 +1,7 @@
-/*
- * Creating a list
- * @return : Using the map method 
+/**
+ * Creates a groceries list with items and quantities using a Map.
+ *
+ * @returns {Map} - A Map containing grocery items as keys and their quantities as values.
  */
 export default function groceriesList() {
   return new Map([
