@@ -1,3 +1,7 @@
+/*
+ * Creating a list
+ *@return : Using the map method 
+ */
 export default function groceriesList() {
   return new Map([
     ['Apples', 10],
