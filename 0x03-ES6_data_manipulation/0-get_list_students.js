@@ -1,25 +1,23 @@
-export default function (getListStudents) {
+function getListStudents() {
+  const students = [
+    {
+      firstName: 'Guillaume',
+      id: 1,
+      location: 'San Francisco',
+    },
+    {
+      firstName: 'James',
+      id: 2,
+      location: 'Columbia',
+    },
+    {
+      firstName: 'Serena',
+      id: 5,
+      location: 'San Francisco',
+    },
+  ];
 
-   const myArray =  [
-      {
-		id: 1, 
-	      firstName : "Guillaume",
-	      location: "San Francisco"
-      },
-	
-      {
-	      id: 2, 
-	      firstName: "James",
-	      location: "Columbia"
-      },
-      
-      {
-	      id: 5,
-	      firstName: "Serena",
-	      location: "San Francisco"
-      }
-	
-   ];
+  return students;
 }
-    const myList = getListStudents();
-    console.log (myList);
+
+export default getListStudents;
