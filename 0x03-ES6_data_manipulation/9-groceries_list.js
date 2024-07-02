@@ -1,6 +1,6 @@
 /*
  * Creating a list
- *@return : Using the map method 
+ * @return : Using the map method 
  */
 export default function groceriesList() {
   return new Map([
