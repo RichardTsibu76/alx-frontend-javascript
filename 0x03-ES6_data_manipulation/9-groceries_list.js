@@ -1,6 +1,6 @@
 /**
- * Creates a groceries list with items and quantities using a Map.
- *
+ * Creating list of Query using the map method items with quantities
+ * Particularly using the map method
  * @returns {Map} - A Map containing grocery items as keys and their quantities as values.
  */
 export default function groceriesList() {
