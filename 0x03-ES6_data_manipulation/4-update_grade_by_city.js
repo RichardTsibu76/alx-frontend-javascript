@@ -1,16 +1,20 @@
-export default function updateStudentGradeByCity(listStudents, city, newGrades) {
-  // Filter students by city
-  const studentsInCity = listStudents.filter(student => student.location === city);
+export default function updateStudentGradeByCity(studentsList, city, newGrades) {
+  if (!Array.isArray(studentsList)) {
+    throw new TypeError('studentsList must be an array');
+  }
 
-  // Map through students in the city and update their grades
-  const updatedStudents = studentsInCity.map(student => {
-    const gradeRecord = newGrades.find(grade => grade.studentId === student.id);
-    return {
-      ...student,
-      grade: gradeRecord ? gradeRecord.grade : 'N/A'
-    };
-  });
+  if (!Array.isArray(newGrades)) {
+    throw new TypeError('newGrades must be an array');
+  }
 
-  return updatedStudents;
+  if (typeof city !== 'string') {
+    throw new TypeError('city must be a string');
+  }
+
+  return studentsList
+    .filter((student) => student.location === city)
+    .map((student) => {
+      const gradeObj = newGrades.find((grade) => grade.studentId === student.id);
+      return Object.assign(student, { grade: gradeObj ? gradeObj.grade : 'N/A' });
+    });
 }
-
