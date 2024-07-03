@@ -1,3 +1,7 @@
+/*
+ * This is about updading students grades
+ */
+
 export default function updateStudentGradeByCity(studentsList, city, newGrades) {
   if (!Array.isArray(studentsList)) {
     throw new TypeError('studentsList must be an array');
